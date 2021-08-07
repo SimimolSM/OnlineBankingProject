@@ -38,7 +38,7 @@ public class BankTest {
 				System.out.println("==============================================");
 				System.out.println("		ACCOUNT CREATION			");
 				System.out.println("==============================================");
-				System.out.println("Enter Account Holder Name: ");
+				System.out.println("Enter Name: ");
 				String name =sc.next();
 				System.out.println("Enter Age : ");
 				int age =sc.nextInt();
