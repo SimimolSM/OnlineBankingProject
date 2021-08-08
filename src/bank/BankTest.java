@@ -3,22 +3,23 @@ package bank;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
 
 
 public class BankTest {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws SQLException{
 		
 		Scanner sc = new Scanner(System.in);
 		CustomerDetails cd;
 		CustomerDetailsServices cds = new CustomerDetailsServices();
+		//cds.createDB();
+		//cds.createTable();
 
 		int ch;
 		do {
-			System.out.println("\n@@@@@@@@@@@ WELCOME TO SM INDIA BANK @@@@@@@@@@@@@");
+			System.out.println("\n@@@@@@@@@@@ WELCOME TO S M INDIA BANK @@@@@@@@@@@@@");
 			System.out.println("==============================================");
-			System.out.println("              HOME			"); 
+			System.out.println("                  HOME			"); 
 			System.out.println("==============================================");
 			System.out.println( "\n1.Open Account"
 					+ "\n2.Withdraw"
@@ -63,7 +64,6 @@ public class BankTest {
 				System.out.println("		WITHDRAW			");
 				System.out.println("==============================================");
 				System.out.println("\nEnter Account Number :");
-				//String acno= sc.next();
 				
 				break;
 				
@@ -72,7 +72,6 @@ public class BankTest {
 				System.out.println("		DEPOSIT			");
 				System.out.println("==============================================");
 				System.out.println("\nEnter Account Number :");
-				//String acno4= sc.next();
 				
 				break;
 				
@@ -80,7 +79,6 @@ public class BankTest {
 			case 4: 
 				
 				System.out.println("\nEnter Account Number :");
-				//String acno1= sc.next();
 				break;
 			case 5:
 				System.out.println("\nEnter Account Number :");
@@ -92,7 +90,7 @@ public class BankTest {
 				System.out.println("==============================================");
 				System.out.println("		ALL ACCOUNTS		");
 				System.out.println("==============================================");
-
+				cds.displayAll();
 				
 				break;
 			case 7:
