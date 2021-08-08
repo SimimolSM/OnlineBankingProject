@@ -12,8 +12,8 @@ public class BankTest {
 		Scanner sc = new Scanner(System.in);
 		CustomerDetails cd;
 		CustomerDetailsServices cds = new CustomerDetailsServices();
-		//cds.createDB();
-		//cds.createTable();
+		cds.createDB();
+		cds.createTable();
 
 		int ch;
 		do {
@@ -47,9 +47,9 @@ public class BankTest {
 				if(age>=18){
 					cd = new CustomerDetails(name,age);
 					cds.insert(cd);
-					System.out.println("\n\nTo activate your account, deposite a minimum amount of 1000 rupees"
+					System.out.println("\n\nTo activate your account, deposit a minimum amount of 1000 rupees"
 							+ "\n\n"
-							+ "---------Thankyou for using SM India Bank-----------------");
+							+ "---------Thankyou for using S M India Bank-----------------");
 				}
 				
 				else {
